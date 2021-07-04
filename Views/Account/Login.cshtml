@@ -1,0 +1,40 @@
+﻿@model Test_task_Xpand.ViewModels.LoginViewModel
+ 
+
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+                   
+                    </div>
+
+                <form class="login100-form" method="post" asp-controller="Account" asp-action="Login"
+                    asp-route-returnUrl="@Model.ReturnUrl">
+                    <span class="login100-form-title">Sign In</span>
+                    <div asp-validation-summary="ModelOnly"></div>
+                    
+                    <div class="wrap-input100" >
+                        <input class="input100" asp-for="Email" placeholder="Email Address"/>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="wrap-input100">
+                        
+                        <input class="input100" asp-for="Password" placeholder="Password"/>
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div>
+                        <label asp-for="RememberMe"></label><br />
+                        <input asp-for="RememberMe" />
+                    </div>
+                    <div class="container-login100-form-btn" >
+                        <input class="login100-form-btn btn1" type="submit" value="Continue" />
+                    </div>
+                    <div class="container-login100-form-btn" >
+                        <input class="login100-form-btn btn2"  value="Sign in with Twitter" />
+                    </div>
+                    <div class="container-login100-form-btn" >
+                        <input class="login100-form-btn btn3"  value="Sign in with Facebook" />
+                    </div>
+                    <a asp-controller="Account" asp-action="Register">Sign Up</a>
+                    <a asp-controller="Account" asp-action="ForgotPassword">Execute forgot password</a>
+                </form>

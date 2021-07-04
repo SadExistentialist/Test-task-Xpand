@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Sad Existentialist\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sad Existentialist\\.nuget\\packages"
+    ]
+  }
+}
